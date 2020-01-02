@@ -51,8 +51,8 @@ Comprender y utilizar distintos tipos de colecciones para resolución de problem
 ## Estrategia: 
 * Obtener elementos únicos, anum.           `[1,3,4,5]` 
 * Obtener las frecuencias de anum, afrec.   `{1,2,1,4]`
-* Obtener un vector de pares ordenados con afrec, anum. `{(1,1),(2,3)(1,4)(4,5)}`
-* Ordenar el vector de pares por frecuencia y valor. `{1,3,3,4,5,5,5,5}`
+* Obtener un vector de pares ordenados con (afrec,anum). `{frecuencia,valor}`{(1,1),(2,3)(1,4)(4,5)}`
+* Ordenar el vector de pares por frecuencia y valor. `{1,3,3,4,5,5,5,5}`frecuencia,valor}
 
 ## Implementación: 
 * ### Obtener elementos unicos, anum.
@@ -76,26 +76,22 @@ for n in anum:
     afrec.append(arr.count(n))
 
 ```
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Alternativa de Ordenar el vector de pares {valor, frecuencia}.
-```
-    sort(mfrec.begin(), mfrec.end(),
-         [] (const pair<int,int> &  a, const pair<int,int> &  b) {
-             if (a.second == b.second)
-                return (a.first < b.first);
-            return (a.second < b.second);
-             });
-
-```
 
 * ### Obtener la salida desde el vector de pares {valor, frecuencia}.
 ```
+anf= list(zip(afrec,anum))
+```
 
-    cout << "resultado: {";
-    for(vector<dupla>::iterator it = mfrec.begin();it != mfrec.end(); it++) {
-        for (int i=0;i < it->second;i++)
-            cout << it->first << ", ";
-    }
-    cout << "}" << endl;
+* ### Obtener un vector de pares ordenados con (afrec, anum).
+```
+anf= list(zip(afrec,anum))
+```
+
+
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Alternativa de Ordenar el vector de pares {valor, frecuencia}.
+```
+anf= list(zip(afrec,anum))
 ```
 
 
