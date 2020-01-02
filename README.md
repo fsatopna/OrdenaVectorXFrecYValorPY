@@ -99,4 +99,12 @@ anf= list(zip(af def cmp_tuplas(a, b):
 rec,anum))
 ```
 
+* ### Generar el vector resultado desde anfs, res.
+```
+res =  []
+for fila in anfs:
+#    print(fila[1],'->',fila[0])
+    for i in range(fila[0]):
+        res.append(fila[1])
 
+```
