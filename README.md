@@ -69,56 +69,34 @@ for n in anum:
 ```
 Notar que el vector anum no necesariamente debe estar ordenado, si debe tener valores únicos(set).
 
-* ### Ordenar el vector de pares {valor, frecuencia}.
-```
-afrec = []
-for n in anum:
-    afrec.append(arr.count(n))
-
-```
-
-* ### Obtener un vector de pares ordenados con (afrec, anum).
+* ### Obtener un vector de pares ordenados con  valor y frecuencia (afrec,anum), anf.
 ```
 anf= list(zip(afrec,anum))
 ```
 
-
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Alternativa de Ordenar el vector de pares {valor, frecuencia}.
+* ### Ordenar el vector, anfs.
 ```
-anf= list(zip(afrec,anum))
+anfs = sorted(anf)
 ```
 
 
-## Notas: 
-* ### Modo de ejecución.
-La primer linea define una macro de nombre DEBUG, si esta macro se compila con true, muestra información que permite analizar el algoritmo
-
-* ### Alternativa de Implementación.
-La segunda linea define una macro de nombre ALTERNATIVA, si esta macro se compila con true, implementa alternativas de ejecución, por ejemplo: cambio de sort de función de relación de orden nominal a anónima(lambda).
-
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Alternativa de Ordenar el vector de pares.
 ```
-(base) fsato@fsato-Aspire-E5-475:~/u1/desarrollo/cpp$ grep -n -B 3 ALT *
-ordenaFrecyValorcpp.cpp-1-#define DEBUG false
-ordenaFrecyValorcpp.cpp:2:#define ALTERNATIVA false 
---
-ordenaFrecyValorcpp.cpp-43-
-ordenaFrecyValorcpp.cpp-44-    if (arr.size() == 0) return arr;
-ordenaFrecyValorcpp.cpp-45-
-ordenaFrecyValorcpp.cpp:46:    if (!(ALTERNATIVA)) {
---
-ordenaFrecyValorcpp.cpp-51-      );
-ordenaFrecyValorcpp.cpp-52-    }
-ordenaFrecyValorcpp.cpp-53-
-ordenaFrecyValorcpp.cpp:54:    if (ALTERNATIVA) {
---
-ordenaFrecyValorcpp.cpp-86-    }
-ordenaFrecyValorcpp.cpp-87-    if (DEBUG) cout << "}" << endl;
-ordenaFrecyValorcpp.cpp-88-
-ordenaFrecyValorcpp.cpp:89:    if (!(ALTERNATIVA)) {
---
-ordenaFrecyValorcpp.cpp-97-     if (DEBUG) cout << "}" << endl;
-ordenaFrecyValorcpp.cpp-98-    } 
-ordenaFrecyValorcpp.cpp-99-
-ordenaFrecyValorcpp.cpp:100:    if (ALTERNATIVA) {
+sorted(anf, cmp=cmp_tuplas)  
+
+anf= list(zip(af def cmp_tuplas(a, b):
+   if a[0]>b[0]:
+      return 1
+   elif a[0]<b[0]:
+      return -1
+   else:
+       if a[1]<b[1]:
+          return 1
+       elif a[1]>b[1]:
+          return -1
+       else:
+          return 0
+rec,anum))
 ```
+
 
