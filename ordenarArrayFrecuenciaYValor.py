@@ -43,10 +43,10 @@ def ordenaFrecYValor(arr):
 sorted(anf, cmp=cmp_tuplas)  # Python2 solo!
      
 '''
+if __name__ == "__main__":
+   arr1 =  [5,1,5,4,3,5,5,3]
+   print("entrada         : ",arr1)
 
-arr1 =  [5,1,5,4,3,5,5,3]
-print("entrada         : ",arr1)
-
-res1 = ordenaFrecYValor(arr1)
-print("resultado       : ",res1)
+   res1 = ordenaFrecYValor(arr1)
+   print("resultado       : ",res1)
 
