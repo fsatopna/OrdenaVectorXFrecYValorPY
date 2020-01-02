@@ -77,16 +77,10 @@ for n in anum:
 
 ```
 
-* ### Obtener la salida desde el vector de pares {valor, frecuencia}.
-```
-anf= list(zip(afrec,anum))
-```
-
 * ### Obtener un vector de pares ordenados con (afrec, anum).
 ```
 anf= list(zip(afrec,anum))
 ```
-
 
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Alternativa de Ordenar el vector de pares {valor, frecuencia}.
