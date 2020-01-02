@@ -1,31 +1,30 @@
-arr =  [5,1,5,4,3,5,5,3]
-print("entrada         : ",arr)
 
-#arr.sort()
-#print("entrada ordenada: ",arr)
+def ordenaFrecYValor(arr):
+      anum = list(set(arr))
+      #print("col1: set nros  : ",anum)
+      
+      #arr.sort(  )
+      #print("entrada ordenada: ",arr)
 
-anum = list(set(arr))
-print("col1: set nros  : ",anum)
-
-afrec = []
-for n in anum:
-    afrec.append(arr.count(n))
+      afrec = []
+      for n in anum:
+         afrec.append(arr.count(n))
     
-print("col2: set frecs : ",afrec)    
+      #print("col2: set frecs : ",afrec)    
 
-anf= list(zip(afrec,anum))
-print("pares (frec,num): ",anf)    
+      anf= list(zip(afrec,anum))
+      #print("pares (frec,num): ",anf)    
 
-anfs = sorted(anf)
-#print("pares ordenados : ",anfs)
+      anfs = sorted(anf)
+      #print("pares ordenados : ",anfs)
 
-res =  []
-for fila in anfs:
-#    print(fila[1],'->',fila[0])
-    for i in range(fila[0]):
-        res.append(fila[1])
+      res =  []
+      for fila in anfs:
+      #    print(fila[1],'->',fila[0])
+         for i in range(fila[0]):
+            res.append(fila[1])
         
-print("resultado       : ",res)
+      return res
 
 '''
  def cmp_tuplas(a, b):
@@ -44,3 +43,10 @@ print("resultado       : ",res)
 sorted(anf, cmp=cmp_tuplas)  # Python2 solo!
      
 '''
+
+arr1 =  [5,1,5,4,3,5,5,3]
+print("entrada         : ",arr1)
+
+res1 = ordenaFrecYValor(arr1)
+print("resultado       : ",res1)
+
