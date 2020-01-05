@@ -116,6 +116,7 @@ for fila in anfs:
 
 Se utilizo la siguiente interfaz desarrollada con Qt Designer
 
+Base tomada de: https://likegeeks.com/es/tutorial-de-pyqt5/#Visual-Signal-editor-de-slots
 
 ![Ventana Principal](https://github.com/fsatopna/OrdenaVectorXFrecYValorPY/blob/master/ordenaVecFrecValuePyQt5.png)
 
