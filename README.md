@@ -116,6 +116,10 @@ for fila in anfs:
 
 Se utilizo la siguiente interfaz desarrollada con Qt Designer
 
+
+![Ventana Principal](https://github.com/fsatopna/OrdenaVectorXFrecYValorPY/blob/master/ordenaVecFrecValuePyQt5.jpg)
+
+
 ## ordenaVecFrecValuePyQt5.ui
 
 
