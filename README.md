@@ -118,6 +118,8 @@ Se utilizo la siguiente interfaz desarrollada con Qt Designer
 
 ## ordenaVecFrecValuePyQt5.ui
 
+
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>MainWindow</class>
@@ -245,6 +247,8 @@ p, li { white-space: pre-wrap; }
  <resources/>
  <connections/>
 </ui>
+
+```
 
 ## ordenaVecFrecValuePyQt5.py
 
